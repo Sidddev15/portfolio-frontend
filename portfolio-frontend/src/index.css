@@ -1,16 +1,143 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
 
 :root {
     --highlight-font: "Source Code Pro", monospace;
     --main-font: "Poppins", sans-serif;
     --body-font: "Inter", sans-serif;
-    --light-bg: #F1FFF0;
+    --light-bg: #fafafa;
     --dark-bg: #0f0c29;
-    --light-txt: #434000;
+    --light-txt: #242424;
     --dark-txt: #ffffff;
     --muted-text: #CCCCCC;
     --highlight: #FF6600;
     --dark-icon-accent: #FFA726;
     --btn-background: linear-gradient(to right, #FF6A00, #FFA726);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    cursor: none;
+    height: 100vh;
+}
+
+body::selection {
+    background-color: #FFA726;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Vertical scrollbar width */
+    height: 10px;
+    /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Track background */
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFA726;
+    /* Scroll thumb color */
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #fb8c00;
+    /* Slightly darker on hover */
+}
+
+h1 {
+    margin: 0;
+
+    font-family: var(--main-font);
+    font-size: 6rem;
+    line-height: 6rem;
+    color: var(--light-txt);
+}
+
+h2 {
+    margin: 0;
+
+    font-family: var(--main-font);
+    font-size: 5rem;
+    line-height: 5rem;
+    color: var(--light-txt);
+}
+
+h3 {
+    margin: 0;
+
+    font-family: var(--main-font);
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--light-txt);
+}
+
+h4 {
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--light-txt);
+}
+
+h5 {
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--light-txt);
+}
+
+h6 {
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--light-txt);
+}
+
+p {
+    margin: 0;
+
+    font-family: var(--body-font);
+    line-height: 1rem;
+    color: var(--light-txt);
+}
+
+span {
+    margin: 0;
+
+    font-family: var(--highlight-font);
+    letter-spacing: -0.5px;
+}
+
+.cursor-circle {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 165, 0, 0.9);
+    /* orange */
+    border-radius: 50%;
+    box-shadow: 0 0 10px orange;
+    position: relative;
+    z-index: 10;
+}
+
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
 }
