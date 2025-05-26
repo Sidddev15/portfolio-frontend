@@ -7,7 +7,7 @@ export const projects = [
             "AniX is a lightweight, developer-friendly animation library for React, Angular, and vanilla JS projects. It powers smooth, production-ready transitions and hover effects.",
         techStack: ["HTML", "CSS", "JavaScript", "React", "Angular"],
         github: "https://github.com/Sidddev15/AniX",
-        liveDemo: "", // Add later if hosted
+        liveDemo: "https://sidddev15.github.io/anixdocs/",
     },
     {
         title: "Samsung TV Plugin",

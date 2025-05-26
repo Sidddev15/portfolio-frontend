@@ -49,7 +49,7 @@ export default function Cursor() {
     }
 
     const move = (e) => {
-      console.log("Mouse moved:", e.clientX, e.clientY);
+      // console.log("Mouse moved:", e.clientX, e.clientY);
       setPosition({ x: e.clientX, y: e.clientY });
       particles.push(createParticle(e.clientX, e.clientY));
     };

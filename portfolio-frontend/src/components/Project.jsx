@@ -1,5 +1,5 @@
-import React from "react";
-import { projects } from "../data/projects";
+import { motion } from "framer-motion";
+import { projects } from "../data/projects.js";
 
 const Projects = () => {
   return (
@@ -8,8 +8,12 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((proj, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="p-6 bg-white rounded-xl shadow-lg border-l-4 border-[var(--highlight)] hover:shadow-2xl transition"
           >
             <h3 className="text-2xl font-semibold pb-3">{proj.title}</h3>
@@ -48,7 +52,7 @@ const Projects = () => {
                 </a>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

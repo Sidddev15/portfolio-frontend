@@ -19,38 +19,47 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col px-6">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-12 lg:px-20">
       <motion.div
-        className="text-center max-w-3xl"
+        className="text-center w-full max-w-4xl"
         variants={container}
         initial="hidden"
         animate="show"
       >
-        <motion.h5 variants={item} className="magic-hover">
+        <motion.h5
+          variants={item}
+          className="text-sm sm:text-base md:text-lg lg:text-xl pb-2"
+        >
           👋🏻 Hello, I'm
         </motion.h5>
 
         <motion.h1
-          variants={container}
-          className="pb-4 font-bold whitespace-nowrap"
+          variants={item}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-4 text-light"
         >
           Siddharth Singh
         </motion.h1>
 
         <motion.p
-          variants={container}
-          className="text-lg pb-6 underline decoration-orange-500"
+          variants={item}
+          className="text-base sm:text-lg md:text-xl underline decoration-orange-500 pb-4"
         >
           Senior Software Developer | Performance Optimizer | UI Architect
         </motion.p>
 
-        <motion.p variants={container} className="text-base pb-10">
+        <motion.p
+          variants={item}
+          className="text-sm sm:text-base md:text-lg pb-10 px-2 sm:px-8"
+        >
           I build blazing-fast UIs and scalable systems with Angular, React &
           Node.js. I love clean code, performance tuning, and animations that
           make users say "Whoa!"
         </motion.p>
 
-        <motion.div variants={container} className="flex justify-center gap-6">
+        <motion.div
+          variants={container}
+          className="flex flex-wrap justify-center items-center gap-6"
+        >
           <a
             href="https://github.com/Sidddev15"
             target="_blank"
@@ -58,7 +67,7 @@ export default function HeroSection() {
           >
             <FaGithub
               size={28}
-              className="hover:text-orange-400 transition-colors duration-300 ease-in-out"
+              className="hover:text-orange-400 transition-colors duration-300"
             />
           </a>
           <a
@@ -68,7 +77,7 @@ export default function HeroSection() {
           >
             <FaLinkedin
               size={28}
-              className="hover:text-orange-400 transition-colors duration-300 ease-in-out"
+              className="hover:text-orange-400 transition-colors duration-300"
             />
           </a>
           <a
@@ -78,13 +87,13 @@ export default function HeroSection() {
           >
             <FaMedium
               size={28}
-              className="hover:text-orange-400 transition-colors duration-300 ease-in-out"
+              className="hover:text-orange-400 transition-colors duration-300"
             />
           </a>
           <a href="/resume/siddharthmay25.pdf" download>
             <HiOutlineDocumentText
               size={28}
-              className="hover:text-orange-400 transition-colors duration-300 ease-in-out"
+              className="hover:text-orange-400 transition-colors duration-300"
             />
           </a>
         </motion.div>

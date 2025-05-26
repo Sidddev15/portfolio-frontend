@@ -63,6 +63,27 @@ h1 {
     color: var(--light-txt);
 }
 
+@media (max-width: 640px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
+
 h2 {
     margin: 0;
 
