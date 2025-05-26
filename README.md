@@ -8,4 +8,4 @@ Check out the live version here:
 [https://sidddev15.github.io/portfolio-frontend/#/](https://sidddev15.github.io/portfolio-frontend/#/)
 
 ## 📫 Connect with me  
-[LinkedIn]([https://www.linkedin.com/in/siddharthsr15](https://www.linkedin.com/in/siddharth1599/))
+[[LinkedIn](https://www.linkedin.com/in/siddharth1599/)]
