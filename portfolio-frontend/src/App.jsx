@@ -9,6 +9,7 @@ import Projects from "./components/Project";
 import TechStack from "./components/TechStack";
 import Navbar from "./components/Navbar";
 import Cursor from "./components/Cursor";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 }
