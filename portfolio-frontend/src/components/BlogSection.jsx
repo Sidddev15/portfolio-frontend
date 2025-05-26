@@ -20,7 +20,9 @@ export default function BlogSection() {
   return (
     <>
       <div className="w-full min-h-screen px-6 md:px-16 py-20 bg-[var(--light-bg)] text-[var(--light-txt)]">
-        <h2 className="font-bold mb-10">Latest Blogs</h2>
+        <h2 className="font-bold mb-10" style={{ fontSize: "4rem" }}>
+          Latest Blogs
+        </h2>
 
         {blogs.length === 0 ? (
           <p>Loading blogs...</p>
