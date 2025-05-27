@@ -3,7 +3,7 @@ export const educationList = [
         title: "Full Stack Specialization",
         institute: "EICT Academy, IIT Roorkee",
         date: "March 2024",
-        link: "https://olympus.mygreatlearning.com/eportfolio?pb_id=14229",
+        link: "https://www.mygreatlearning.com/eportfolio/siddharth-singh11",
         highlights: [
             "Built 4 production-ready full stack projects",
             "Hands-on in Spring Boot, MongoDB, Node.js",
