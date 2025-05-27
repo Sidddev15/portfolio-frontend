@@ -9,7 +9,7 @@ export const educationList = [
             "Hands-on in Spring Boot, MongoDB, Node.js",
             "Deployed using Netlify, Vercel, Render",
         ],
-        skills: ["Spring Boot", "Node.js", "MongoDB", "React", "JWT", "Git"],
+        skills: ["Big-Data Analytics", "DBVI(INTL)", "AI On Cloud", "SQL", "Data Preprocessing", "Data Handling And Visualization", "HTML5/CSS3", "Backend Development", "Database and ORM", "DSA", "Java"],
     },
     {
         title: "B.Tech in Computer Science",
@@ -20,6 +20,6 @@ export const educationList = [
             "Built backend systems in Java & MySQL",
             "Participated in multiple hackathons and tech fests",
         ],
-        skills: ["Java", "MySQL", "DSA", "OOP", "Teamwork"],
+        skills: ["C", "C++", "OS", "DOA", "DBMS", "CN"],
     }
 ];

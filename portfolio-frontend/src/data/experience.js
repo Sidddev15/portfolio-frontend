@@ -9,7 +9,7 @@ export const experienceList = [
             "Managed team of junior devs, led daily standups, tracked attendance & progress.",
             "Integrated winset libraries with WebOS and ensured device compatibility across 20+ TV models.",
         ],
-        skills: ["Angular", "SCSS", "Node.js", "Performance", "Mentoring", "Leadership"],
+        skills: ["Angular", "SCSS", "Node.js", "Performance", "Mentoring", "Leadership", "React", ".Net"],
     },
     {
         role: "Frontend Developer",
