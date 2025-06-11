@@ -71,7 +71,6 @@ export default function BlogSection() {
           </div>
         )}
       </div>
-      );
     </>
   );
 }
