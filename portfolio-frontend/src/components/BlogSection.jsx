@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function BlogSection() {
   const [blogs, setBlogs] = useState([]);
@@ -27,14 +28,14 @@ export default function BlogSection() {
         {blogs.length === 0 ? (
           <p>Loading blogs...</p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-4">
             {blogs.map((blog, index) => (
               <a
                 key={index}
                 href={blog.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition border-l-4 border-[var(--highlight)] p-6 group"
+                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition border-l-4 border-[var(--highlight)] p-6 group flex flex-col"
               >
                 {/* Image */}
                 {blog.thumbnail && (
@@ -46,18 +47,18 @@ export default function BlogSection() {
                 )}
 
                 {/* Title & Snippet */}
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-[var(--highlight)] transition">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-[var(--highlight)] transition pb-2">
                   {blog.title}
                 </h3>
                 <p
                   className="text-gray-700 text-sm mb-4"
                   dangerouslySetInnerHTML={{
-                    __html: blog.description.substring(0, 160) + "...",
+                    __html: blog.description.substring(0, 150) + "...",
                   }}
                 ></p>
 
                 {/* Date + Read More */}
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-6">
                   <span className="text-xs text-[var(--muted-text)]">
                     {new Date(blog.pubDate).toLocaleDateString()}
                   </span>
